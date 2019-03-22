@@ -7,8 +7,6 @@ int main() {
 	cin>>N;
 	temp = N;
 	rev = 0;
-	if(N<=1000)
-	{
 	while(N>0)
 	{
 		val = N % 10;
@@ -22,7 +20,6 @@ int main() {
 	else
 	{
 		cout<<"no";
-	}
 	}
 	return 0;
 }
