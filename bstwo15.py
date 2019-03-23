@@ -7,4 +7,4 @@ for i in range(N+1,Q-1):
 		print(i,end=" ")
 for i in range(Q-1,Q):
 	if(i%2==0):
-		print(i)
+		print(i,end="")
