@@ -14,7 +14,7 @@ for i in results:
 	if(results[i]==1):
 		c.append(i)
 #c = sorted(c)
-if not c:
-	print("unique")
-else:
-	print(" ".join(c))
+#if not c:
+#	print("unique")
+#else:
+print(" ".join(c))
