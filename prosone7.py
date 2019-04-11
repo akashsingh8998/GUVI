@@ -1,14 +1,15 @@
-n=int(input())
-a=2
-if n==18:
-    print(3)
-else:
-    while a<n:
-        if a==n:
-            b=1
-        else:
-            a=a*2
-    if a==n:
-        print(0)
+y,z=1,2
+t=int(input())
+while z<=t:
+    if 2**y==t:
+        y=0
+        break
     else:
-        print(int(n-(a/2)))
+        z=2**y
+        y=y+1
+if(y!=0):
+    y=y-2
+    a=t-2**y
+    print(a)
+else:
+    print(0)
