@@ -1,11 +1,10 @@
-# your code goes here
-a = int(input())
-n = []
-t = input().split()
-for i in range(0,a):
-	n.append(int(t[i]))
-for i in range(0,a):
-	for j in range(i+1,a):
-		if(n[i]+n[j] == 0):
-			print(n[i],n[j])
-			break
+n=int(input())
+a=list(map(int,input().split()))
+t=max(a)
+c,d=0,0
+for i in range(0,len(a)-1):
+  for j in range(i+1,len(a)):
+    if abs(a[i]+a[j])<t:
+      c,d=a[i],a[j]
+      t=abs(c+d)
+print(c,d)
