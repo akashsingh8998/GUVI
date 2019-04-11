@@ -1,11 +1,11 @@
 # your code goes here
-n = int(input())
-a = []
-b = input().split()
-for i in range(0,n):
-	a.append(int(b[i]))
-for i in range(0,n):
-	for j in range(i+1,n):
-		if(a[i]+a[j] == 0):
-			print(a[i],a[j])
+a = int(input())
+n = []
+t = input().split()
+for i in range(0,a):
+	n.append(int(t[i]))
+for i in range(0,a):
+	for j in range(i+1,a):
+		if(n[i]+n[j] == 0):
+			print(n[i],n[j])
 			break
