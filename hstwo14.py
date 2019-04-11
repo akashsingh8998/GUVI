@@ -1,16 +1,10 @@
-def toString(List): 
-	return ''.join(List) 
+# your code goes here
+from itertools import permutations
 
-def permute(a, l, r): 
-	if l == r: 
-		print(toString(a))
-	else: 
-		for i in range(l, r + 1): 
-			a[l], a[i] = a[i], a[l] 
-			permute(a, l + 1, r) 
-			a[l], a[i] = a[i], a[l]
+n = input()
 
-string = input()
-n = len(string) 
-a = list(string) 
-permute(a, 0, n-1) 
+m = permutations(n)
+m = list(dict.fromkeys(m))
+
+for perm in m:
+    print(''.join(perm))
