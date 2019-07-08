@@ -1,4 +1,4 @@
-ls=input()
+ls1=input()
 y=map(int,input().split())
 p1=[]
 for i in y:
